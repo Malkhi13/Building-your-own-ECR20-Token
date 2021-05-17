@@ -3,10 +3,10 @@ pragma solidity ^0.5.00;
 // ----------------------------------------------------------------------------
 // 'GGMToken' token contract
 //
-// Deployed to : 0xFEB02D9383C49A8373F88e82EbCecB553c1837bf
-// Symbol      : GGM
-// Name        : GGMToken
-// Total supply: 100000000
+// Deployed to : 0xb98f247b8d8A8663d75d589A2f9B5A924dcbb761
+// Symbol      : LIF3
+// Name        : LIF3SPACE
+// Total supply: 44000000000000000000
 // Decimals    : 18
 //
 // Enjoy.
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract GGMToken is ERC20Interface, Owned, SafeMath {
+contract LIF3SPACE is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -113,12 +113,12 @@ contract GGMToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "GGM";
-        name = "GGMToken";
+        symbol = "LIF3";
+        name = "LIF3SPACE";
         decimals = 18;
-        _totalSupply = 100000000000000000000000000;
-        balances[0xFEB02D9383C49A8373F88e82EbCecB553c1837bf] = _totalSupply;
-        emit Transfer(address(0), 0xFEB02D9383C49A8373F88e82EbCecB553c1837bf, _totalSupply);
+        _totalSupply = 44000000000000000000;
+        balances[0xb98f247b8d8A8663d75d589A2f9B5A924dcbb761] = _totalSupply;
+        emit Transfer(address(0), 0xb98f247b8d8A8663d75d589A2f9B5A924dcbb761, _totalSupply);
     }
 
 
